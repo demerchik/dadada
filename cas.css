@@ -1,0 +1,64 @@
+img {
+  width: 0;
+  min-width: 70%;
+  transition-duration: 1s;
+  /*height: 500px;
+  object-fit: cover;*/
+  cursor: pointer;
+  animation-name: bluring;
+  animation-duration: 3s;
+}
+.gal {
+  display: grid;
+  grid-auto-flow: column;
+  width: 1200px;
+}
+img:hover {
+  width: 200px;
+}
+body {
+  width: 60%;
+  margin: 0 auto;
+  background-image: url(https://www.pixelstalk.net/wp-content/uploads/2016/05/New-York-City-Street-Wallpapers.jpg);
+  font-family: 'Noto Sans JP', sans-serif;
+  font-family: 'Roboto Mono', monospace;
+}
+.zag {
+  text-align: center;
+  font-size: 50px;
+  background-color: rgb(255 255 255 / .4);
+  border-radius: 30px;
+  box-shadow: 3px 3px 5px #000000;
+  border: 1px solid black;
+  text-shadow:
+    -1px -1px #000,
+    0 1px 0 #444;
+}
+.zag > span {
+transition-duration: 1s;
+  
+}
+
+.zag > span:hover {
+  color: #9400D3;
+  
+}
+.n1{
+  color: red;
+  margin-right: 10%;
+}
+.n2{
+  color: #00008B;
+  margin-left: 10%;
+}
+@keyframes bluring {
+  from {
+    filter: blur(200px);
+  }
+  to {
+    filter: blur(0);
+  }
+}
+audio {
+  opacity: 0;
+}

@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html>
+<head><meta http-equiv="cache-control" content="no-cache"><meta http-equiv="Pragma" content="no-cache"><meta http-equiv="Expires" content="-1">
+  <title>Spiderman VS Venom</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100&amp;family=Roboto+Mono:wght@300&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="cas.css">
+</head>
+<body>
+  <h1 class="zag"><span class="n1">Spiderman</span> VS <span class="n2">Venom</span></h1>
+  <div class="gal">
+    <img src="https://pngimg.com/uploads/spider_man/spider_man_PNG68.png" alt="" onclick="musOn()">
+    <img src="https://imgpng.ru/d/venom_PNG41.png" alt="" onclick="musssOn()">
+  </div>
+  <audio src="./b_n.mp3" class="aud" controls></audio>
+  <audio src="./c_g.mp3" class="audd" controls></audio>
+
+<script>
+  let audio = document.querySelector(".aud")
+  let audio1 = document.querySelector(".audd")
+  function musOn()
+{
+			if(audio.paused) 
+  {
+          audio.play();
+          audio1.pause();
+  } 
+  else 
+  {
+      audio.pause();
+  }
+
+}
+function musssOn()
+{
+    if(audio1.paused) 
+  {
+          audio1.play();
+          audio.pause();
+  } 
+  else 
+  {
+      audio1.pause();
+  }
+
+}</script></body>
